@@ -5,7 +5,7 @@ body {
 /* START HEADER */
 .header {
   width: 100%;
-  height: 120px;
+  height: 110px;
   border-bottom: 1.5px solid rgb(203, 195, 195);
 }
 .header-top {
@@ -20,11 +20,24 @@ body {
   color: #f1641e;
   cursor: pointer;
 }
-.header-top p {
+.header-top button {
+  width: 130px;
+  height: 41px;
   font-weight: bold;
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: 20px;
+  margin-left: 15px;
+  border-radius: 25px;
+  border: none;
+  background-color: #fff;
 }
+.header-top button:hover {
+  background-color: #f1ecec;
+  cursor: pointer;
+}
+.header-top button p {
+  display: inline;
+}
+
 .search {
   width: 62%;
   height: 50px;
@@ -58,23 +71,49 @@ body {
   width: 17%;
   height: 70px;
   display: flex;
+  padding-right: 20px;
+}
+.header-sign-btn {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.header-sign-btn:hover {
+  background-color: #f1ecec;
+  cursor: pointer;
 }
 .header-sign p {
-  margin-top: 30px;
+  width: 100px;
+  margin-top: 20px;
+  text-align: center;
 }
 .header-sign i {
-  font-size: 18px;
-  margin-top: 30px;
-  margin-left: 20px;
+  padding-top: 10px;
 }
+.header-sign i:hover {
+  background-color: rgb(202, 228, 242);
+  border-radius: 50%;
+  padding: 12px;
+}
+
 .header-nav {
   width: 100%;
   text-align: center;
 }
+.header-nav ul {
+  margin-top: 12px;
+}
 .header-nav ul li {
   padding: 0px 20px;
-  font-size: 18px;
+  font-size: 17px;
   display: inline;
+  font-weight: bold;
+}
+.header-nav ul li:hover {
+  background-color: #f1ecec;
+  border-radius: 25px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  cursor: pointer;
 }
 /* CLOSE HEADER */
 /* START PROFILE */
@@ -108,7 +147,7 @@ body {
 .people1 img {
   width: 100%;
   border-radius: 50%;
-}   
+}
 .people1 p {
   font-size: 20px;
   font-weight: bold;
@@ -121,7 +160,7 @@ body {
 }
 .people2:hover {
   border-bottom: 2px solid #000;
-   width: 13%;
+  width: 13%;
   height: 185px;
 }
 .people2 img {
@@ -138,7 +177,7 @@ body {
 
 .categories {
   width: 100%;
-  height: 900px;
+  height: 840px;
   text-align: center;
 }
 .categories h1 {
@@ -160,8 +199,8 @@ body {
   background-color: #fff;
 }
 .card:hover {
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.49);
-  }
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.49);
+}
 .card img {
   width: 90%;
   height: 85%;
@@ -204,17 +243,441 @@ body {
   font-weight: bold;
   margin-top: 5px;
 }
-.categories button{
-    margin-top: 50px;
-    padding: 15px 20px;
-    border: none;
-    font-size: 20px;
-    border-radius: 25px;
-    background-color: #e6e0e0;
+.categories button {
+  margin-top: 50px;
+  padding: 15px 20px;
+  border: none;
+  font-size: 20px;
+  border-radius: 25px;
+  background-color: #e6e0e0;
 }
-.categories button:hover{
-    cursor: pointer;
-    background-color: #dbd7d7;
-    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.49);
-  }
-  /* CLOSE CATEGORY */
+.categories button:hover {
+  cursor: pointer;
+  background-color: #dbd7d7;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.49);
+}
+
+/* CLOSE CATEGORY */
+/* START GIFTS */
+
+.gifts-section {
+  width: 100%;
+  height: 400px;
+}
+.gifts-section h1{
+  margin-left: 3%;
+}
+.gifts{
+  width: 95%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2.5%;
+}
+.gifts-card {
+  width: 19%;
+  height: 285px;
+  border-radius: 5px;
+}
+.gifts-card:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.49);
+}
+.gifts-card img {
+  width: 92%;
+  margin-left: 4%;
+  margin-top: 4%;
+  border-radius: 5px;
+}
+.gifts-card h4 {
+  font-size: 16px;
+  margin: 0%;
+  margin-left: 4%;
+}
+.gifts-card ul {
+  margin: 0%;
+  padding: 0%;
+  margin-left: 4%;
+}
+.gifts-card ul li {
+  display: inline;
+}
+.gifts-card ul li i {
+  margin-top: 6px;
+  font-size: 13px;
+}
+.gifts-card ul p {
+  display: inline;
+}
+.price1 {
+  display: inline;
+}
+.price2 {
+  display: inline;
+  text-decoration: line-through;
+  font-size: 14px;
+  color: green;
+}
+.price3 {
+  display: inline;
+  font-size: 14px;
+  color: green;
+}
+.gifts-card button {
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 25px;
+  background-color: rgb(158, 249, 158);
+  border: none;
+  margin-top: 8px;
+  margin-left: 4%;
+}
+
+
+.gifts-card2 {
+  width: 19%;
+  height: 260px;
+  border-radius: 5px;
+}
+.gifts-card2:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.49);
+}
+.gifts-card2 img {
+  width: 92%;
+  margin-left: 4%;
+  margin-top: 4%;
+  border-radius: 5px;
+}
+.gifts-card2 h4 {
+  font-size: 16px;
+  margin: 0%;
+  margin-left: 4%;
+}
+.gifts-card2 ul {
+  margin: 0%;
+  padding: 0%;
+  margin-left: 4%;
+}
+.gifts-card2 ul li {
+  display: inline;
+}
+.gifts-card2 ul li i {
+  margin-top: 6px;
+  font-size: 13px;
+}
+.gifts-card2 ul p {
+  display: inline;
+}
+.gifts-card2-price1 {
+  display: inline;
+}
+.gifts-card2-price2 {
+  display: inline;
+  text-decoration: line-through;
+  font-size: 14px;
+  color: green;
+}
+.gifts-card2-price3 {
+  display: inline;
+  color: green;
+  font-size: 14px;
+}
+
+.gifts-card3 {
+  width: 19%;
+  height: 285px;
+  border-radius: 5px;
+}
+.gifts-card3:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.49);
+}
+.gifts-card3 img {
+  width: 92%;
+  margin-left: 4%;
+  margin-top: 4%;
+  border-radius: 5px;
+}
+.gifts-card3 h4 {
+  font-size: 16px;
+  margin: 0%;
+  margin-left: 4%;
+}
+.gifts-card3 ul {
+  margin: 0%;
+  padding: 0%;
+  margin-left: 4%;
+}
+.gifts-card3 ul li {
+  display: inline;
+}
+.gifts-card3 ul li i {
+  margin-top: 6px;
+  font-size: 13px;
+}
+.gifts-card3 ul p {
+  display: inline;
+}
+.gifts-card3 button {
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 25px;
+  background-color: rgb(252, 209, 164);
+  border: none;
+  margin-top: 8px;
+  margin-left: 4%;
+}
+/* CLOSE GIFTS */
+/* START SHOP-SECTION */
+
+.shops{
+  width: 100%;
+  height: 660px;
+}
+.shops h1{
+  margin-left: 4%;
+}
+.shop-cards{
+  width: 93%;
+  height: 550px;
+  margin-left:4%;
+  display: flex;
+  justify-content: space-between;
+}
+.shop-card1{
+  width: 32.5%;
+  height: 550px;
+}
+.shop-card1 img{
+  width: 100%;
+  height: 90%;
+}
+.shop-card1 a{
+  color: #949494;
+}
+/* CLOSE SHOP-SECTION */
+/* START GIFTS-CATEGORIES */
+
+.gifts-categories{
+  width: 100%;
+  height: 440px;
+}
+.gifts-categories h1{
+  margin-left: 4%;
+}
+.gifts-categories-card{
+  width: 93%;
+  height: 300px;
+  margin-left: 3.5%;
+  display: flex;
+  justify-content: space-between;
+}
+.gifts-card1{
+  width: 19%;
+  height: 280px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: .5px solid #000;
+}
+.gifts-card1:hover{
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.49);
+}
+.gifts-card1 img{
+  width: 100%;
+  height: 200px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.gifts-card1 h1{
+  font-size: 24px;
+  margin: 30px 0px; 
+}
+
+.gifts-card4{
+  width: 19%;
+  height: 280px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: .5px solid #000;
+}
+.gifts-card4:hover{
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.49);
+}
+.gifts-card4 img{
+  width: 100%;
+  height: 200px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.gifts-card4 h1{
+  font-size: 24px;
+  margin: 10px 0px; 
+}
+
+/* CLOSE GIFTS-CATEGORIES */
+/* START ETSY-ABOUT */
+
+.etsy-about{
+  width: 100%;
+  height: 600px;
+  background-color: #FFFBD8;
+  text-align: center;
+}
+.etsy-about h1{
+  padding-top: 40px;
+  font-size: 40px;
+  margin: 0px;
+}
+.etsy-about a{
+  padding-top: 10px;
+  margin: 0%;
+  color: #000;
+}
+.esty-abouts-sec{
+  width: 90%;
+  height: 300px;
+  margin-top: 5px;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.esty-about-community{
+  width: 33%;
+  height: 300px;
+  margin-left: 3%;
+}
+.esty-about-community h1{
+  font-size: 30px;
+  padding-left: 4%;
+  text-align: left;
+}
+.esty-about-community p{
+  text-align: left;
+  padding-left: 4%;
+  font-size: 21px;
+}
+.esty-about-community span{
+  text-decoration:underline;
+}
+.etsy-about button{
+  padding: 13px 25px;
+  border-radius: 25px;
+  background-color: #FFFBD8;
+  font-size: 16px;
+  font-weight: bold;
+}
+.etsy-about button:hover{
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.49);
+  cursor: pointer;
+}
+/* CLOSE ETSY-ABOUT */
+/* START EMAIL-SECTION */
+
+.email-section{
+  width: 100%;
+  height: 140px;
+  background-color: rgb(187, 230, 247);
+  text-align: center;
+}
+.email-section p{
+  margin: 0%;
+  padding-top: 40px;
+  font-weight: bold;
+  font-size: 19px;
+}
+.email-input{
+  width: 30%;
+  height: 35px;
+  border: 2px solid #000;
+  border-radius: 25px;
+  margin-left: 34%;
+  margin-top: 20px;
+  position: relative;
+  border: none;
+}
+.email-input:hover{
+  outline: 1px solid #000;
+}
+.email-input input{
+  width: 69.5%;
+  height: 100%;
+  position: absolute;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  left: 0px;
+  font-size: 15px;
+  padding-left: 15px;
+  border: none;
+}
+.email-input button{
+  width: 30.5%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  right: 0.5px;
+  top: 0px;
+  font-size: 17px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: none;
+}
+.email-input button:hover{
+  background-color: #edecec;
+}
+/* CLOSE EMAIL-SECTION */
+/* START ETSY-ELECTRICITY */
+
+.etsy-electricity{
+  width: 100%;  
+  height: 100px;
+  background-color: #3B67D9;
+  text-align: center;
+}
+.etsy-electricity p{
+  margin: 0%;
+  color: #fff;
+  padding-top: 40px;
+  font-size: 20px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* CLOSE ETSY-ELECTRICITY */
+/* START FOOTER */
+
+.footer{
+  width: 100%;
+  height: 300px;
+  background-color: #949494;
+  display: flex;
+}
+.footer-left{
+  width: 35%;
+  height: 100%;
+  background-color: #122868;
+  text-align: center;
+}
+.footer-left h1{
+  font-size: 48px;
+  margin-top: 15%;
+  margin-bottom:4%;
+  padding: 28px 10px;
+  background-color: #f1641e;
+  display: inline-block;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.footer-left button{
+  display: block;
+  background-color: #3140af;
+  font-size: 18px;
+  padding: 15px 20px;
+  border-radius: 25px;
+  color: #fff;
+  border: none;
+  margin-left: 24%;
+}
+.footer-left button:hover{
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.49);
+  cursor: pointer;
+}
